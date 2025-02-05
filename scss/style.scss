@@ -420,7 +420,7 @@ h5,
 
 .navbar-brand {
   .nav-logo {
-    width: 60px; /* ← Change this value */
+    width: 60px;
     height: auto;
     transition: transform 0.3s ease-in-out;
 
@@ -440,7 +440,6 @@ h5,
   position: relative;
   .overlay {
     position: absolute;
-    // width: 50%;
     top: 0;
     left: 0;
     right: 0;
@@ -689,7 +688,7 @@ h5,
 }
 
 .container {
-  // max-width: 1230px;
+  max-width: 1230px;
 }
 
 .bg-light {
