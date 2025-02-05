@@ -598,7 +598,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 100%;
   }
 }
 
@@ -10975,7 +10975,11 @@ h5,
   text-transform: uppercase;
 }
 .navbar-brand .nav-logo {
-  width: 60px;
+  width: 100px;
+}
+.navbar-brand span {
+  font-size: 24px;
+  color: #343a40;
 }
 
 .hero-wrap {
@@ -11096,7 +11100,7 @@ h5,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 600px;
+  height: 100dvh;
   position: relative;
   z-index: 0;
 }

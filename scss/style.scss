@@ -219,10 +219,10 @@ h5,
 
 .ftco-navbar-light {
   background: transparent !important;
-  // position: absolute;
-  // top: 20px;
-  // left: 0;
-  // right: 0;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
   z-index: 3;
   padding: 0;
   .container {
@@ -685,10 +685,6 @@ h5,
       }
     }
   }
-}
-
-.container {
-  max-width: 1230px;
 }
 
 .bg-light {
