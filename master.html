@@ -36,7 +36,7 @@
         <div class="col-md-4 d-flex align-items-center">
           <a class="navbar-brand d-flex align-items-center" href="index.html">
             <img class="nav-logo" src="images/logo.png" alt="logo">
-            BITU <span class="pl-2">University</span>
+            BITU
           </a>
         </div>
         <div class="col-lg-8 d-block">
@@ -71,8 +71,8 @@
         <span class="oi oi-menu"></span> Menu
       </button>
       <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
             <a href="index.html" class="nav-link pl-0">Home</a>
           </li>
           <li class="nav-item">
@@ -81,13 +81,14 @@
           <li class="nav-item">
             <a href="courses.html" class="nav-link">Organization Structure</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Programs
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="master.html">Master</a></li>
+              <li><a class="dropdown-item active" href="master.html">Master</a></li>
               <li><a class="dropdown-item" href="bachelor.html">Bachelor</a></li>
+              <li><a class="dropdown-item" href="ardenature.html">Residency medical training</a></li>
               <li><a class="dropdown-item" href="it_course.html">IT courses</a></li>
               <li><a class="dropdown-item" href="language.html">Language courses</a></li>
               <li><a class="dropdown-item" href="medical.html">Chines tradional medical</a></li>
@@ -121,88 +122,79 @@
     </div>
   </section>
 
-  <div class="container mt-4">
-    <h1 class="text-center">Master</h1>
-    <div class="alert alert-primary text-center master-row">
-      Hover over me to expand the table!
-    </div>
+  <!-- Table starts collapsed -->
+  <section class="ftco-section">
+    <div class="container mt-4">
+      <h1 class="text-center">Master</h1>
+      <div class="alert alert-primary text-center master-row">
+        Hover over me to expand the table!
+      </div>
 
-    <!-- Table starts collapsed -->
-    <div class="table-container">
-      <table class="table table-bordered">
-        <thead class="thead-dark">
-          <tr>
-            <th>#</th>
-            <th>Faculties 2023-2024</th>
-            <th>Price</th>
-            <th>Duration of study</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>70910212-Surgery (by faculties)</td>
-            <td>0</td>
-            <td>3 years</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>70910214-Neurosurgery</td>
-            <td>0</td>
-            <td>3 years</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>70910201-Obstetrician-gynaecology</td>
-            <td>0</td>
-            <td>3 years</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>70910221-Traumatology and orthopedics</td>
-            <td>0</td>
-            <td>3 years</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>70910101-Orthopedic dentistry</td>
-            <td>0</td>
-            <td>3 years</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>70910101-Children's surgical dentistry</td>
-            <td>0</td>
-            <td>3 years</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>70910101-Children's therapeutic dentistry</td>
-            <td>0</td>
-            <td>3 years</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>70910101-Maxillofacial surgery</td>
-            <td>0</td>
-            <td>3 years</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>70910101-Therapeutic dentistry</td>
-            <td>0</td>
-            <td>3 years</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>70111401-Uzbek language and literature</td>
-            <td>0</td>
-            <td>2 years</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-container">
+        <table class="table table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>#</th>
+              <th>Faculties <span id="currentYear">2023</span>-<span id="nextYear">2024</span></th>
+              <th>Duration of study</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>70910212-Surgery (by faculties)</td>
+              <td>3 years</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>70910214-Neurosurgery</td>
+              <td>3 years</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>70910201-Obstetrician-gynaecology</td>
+              <td>3 years</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>70910221-Traumatology and orthopedics</td>
+              <td>3 years</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>70910101-Orthopedic dentistry</td>
+              <td>3 years</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>70910101-Children's surgical dentistry</td>
+              <td>3 years</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>70910101-Children's therapeutic dentistry</td>
+              <td>3 years</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>70910101-Maxillofacial surgery</td>
+              <td>3 years</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>70910101-Therapeutic dentistry</td>
+              <td>3 years</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>70111401-Uzbek language and literature</td>
+              <td>2 years</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-  </div>
+  </section>
 
 
   <footer class="ftco-footer ftco-bg-dark ftco-section">
@@ -310,6 +302,14 @@
         }
       });
     });
+
+    // Get the current year and next year
+    const currentYear = new Date().getFullYear();
+    const nextYear = currentYear + 1;
+
+    // Insert values into the spans
+    document.getElementById("currentYear").textContent = currentYear;
+    document.getElementById("nextYear").textContent = nextYear;
   </script>
 </body>
 
