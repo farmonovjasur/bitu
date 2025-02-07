@@ -11117,20 +11117,6 @@ h5,
   bottom: 0;
   left: 0;
   right: 0;
-  background: #0d1128;
-  background: -moz-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-  background: -webkit-gradient(
-    left bottom,
-    right top,
-    color-stop(0%, #0d1128),
-    color-stop(100%, #fd6100)
-  );
-  background: -webkit-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-  background: -o-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-  background: -ms-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-  background: linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d1128', endColorstr='#fd6100', GradientType=1 );
-  opacity: 0.5;
 }
 .owl-carousel.home-slider .slider-item .slider-text {
   height: 600px;
@@ -12277,21 +12263,8 @@ textarea.form-control {
   right: 0;
   content: "";
   z-index: -1;
-  opacity: 0.8;
-  background: #0d1128;
-  background: #0d1128;
-  background: -moz-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-  background: -webkit-gradient(
-    left bottom,
-    right top,
-    color-stop(0%, #0d1128),
-    color-stop(100%, #fd6100)
-  );
-  background: -webkit-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-  background: -o-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-  background: -ms-linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-  background: linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d1128', endColorstr='#fd6100', GradientType=1 );
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.5); 
 }
 
 .ftco-counter {
@@ -12329,6 +12302,9 @@ textarea.form-control {
   font-size: 40px;
   color: #fff;
   display: block;
+}
+.ftco-counter .text strong.plus::after {
+  content: '+';
 }
 .ftco-counter .text span {
   display: block;

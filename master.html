@@ -18,14 +18,27 @@
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <style>
-  .table-container {
-    max-height: 50px;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
+  .ftco-section {
+    padding: 4em 0;
   }
 
   .table-container.expanded {
     max-height: 100%;
+  }
+
+  .modal-title {
+    font-weight: 600;
+  }
+
+  .modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    min-width: 50vw;
+  }
+
+  [data-toggle="modal"] {
+    cursor: pointer;
   }
 </style>
 
@@ -124,14 +137,11 @@
 
   <!-- Table starts collapsed -->
   <section class="ftco-section">
-    <div class="container mt-4">
+    <div class="container">
       <h1 class="text-center">Master</h1>
-      <div class="alert alert-primary text-center master-row">
-        Hover over me to expand the table!
-      </div>
 
       <div class="table-container">
-        <table class="table table-bordered">
+        <table class="table table-bordered table-hover">
           <thead class="thead-dark">
             <tr>
               <th>#</th>
@@ -142,56 +152,245 @@
           <tbody>
             <tr>
               <td>1</td>
-              <td>70910212-Surgery (by faculties)</td>
+              <td data-toggle="modal" data-target="#modal1">70910212-Surgery (by faculties)</td>
               <td>3 years</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>70910214-Neurosurgery</td>
+              <td data-toggle="modal" data-target="#modal2">70910214-Neurosurgery</td>
               <td>3 years</td>
             </tr>
             <tr>
               <td>3</td>
-              <td>70910201-Obstetrician-gynaecology</td>
+              <td data-toggle="modal" data-target="#modal3">70910201-Obstetrician-gynaecology</td>
               <td>3 years</td>
             </tr>
             <tr>
               <td>4</td>
-              <td>70910221-Traumatology and orthopedics</td>
+              <td data-toggle="modal" data-target="#modal4">70910221-Traumatology and orthopedics</td>
               <td>3 years</td>
             </tr>
             <tr>
               <td>5</td>
-              <td>70910101-Orthopedic dentistry</td>
+              <td data-toggle="modal" data-target="#modal5">70910101-Orthopedic dentistry</td>
               <td>3 years</td>
             </tr>
             <tr>
               <td>6</td>
-              <td>70910101-Children's surgical dentistry</td>
+              <td data-toggle="modal" data-target="#modal6">70910101-Children's surgical dentistry</td>
               <td>3 years</td>
             </tr>
             <tr>
               <td>7</td>
-              <td>70910101-Children's therapeutic dentistry</td>
+              <td data-toggle="modal" data-target="#modal7">70910101-Children's therapeutic dentistry</td>
               <td>3 years</td>
             </tr>
             <tr>
               <td>8</td>
-              <td>70910101-Maxillofacial surgery</td>
+              <td data-toggle="modal" data-target="#modal8">70910101-Maxillofacial surgery</td>
               <td>3 years</td>
             </tr>
             <tr>
               <td>9</td>
-              <td>70910101-Therapeutic dentistry</td>
+              <td data-toggle="modal" data-target="#modal9">70910101-Therapeutic dentistry</td>
               <td>3 years</td>
             </tr>
             <tr>
               <td>10</td>
-              <td>70111401-Uzbek language and literature</td>
+              <td data-toggle="modal" data-target="#modal10">70111401-Uzbek language and literature</td>
               <td>2 years</td>
             </tr>
           </tbody>
         </table>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal1Label">70910212-Surgery (by faculties)</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Nihil sapiente incidunt
+            iure vel distinctio? Voluptatem non obcaecati
+            perspiciatis quas accusantium molestiae suscipit
+            tenetur, quis possimus, necessitatibus doloremque
+            saepe cupiditate est? Eum quos ipsam laborum libero
+            expedita perspiciatis at vel eius.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal2Label">70910214-Neurosurgery</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repellendus quos reiciendis nihil
+            provident accusamus rerum dolorem tempora laboriosam et quam ut saepe commodi eius excepturi temporibus
+            illo accusantium esse, at ex. Ad at quibusdam ratione asperiores esse voluptas obcaecati.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label">70910201-Obstetrician-gynaecology</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae sapiente quam quo, iure veritatis
+            inventore repudiandae pariatur hic, odit excepturi! Cumque amet qui nobis minima pariatur voluptate beatae
+            nemo commodi veritatis. Est, voluptatum obcaecati. Rerum quo quia earum hic?
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label">70910221-Traumatology and orthopedics</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae sapiente quam quo, iure veritatis
+            inventore repudiandae pariatur hic, odit excepturi! Cumque amet qui nobis minima pariatur voluptate beatae
+            nemo commodi veritatis. Est, voluptatum obcaecati. Rerum quo quia earum hic?
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 5 -->
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label">70910101-Orthopedic dentistry</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae sapiente quam quo, iure veritatis
+            inventore repudiandae pariatur hic, odit excepturi! Cumque amet qui nobis minima pariatur voluptate beatae
+            nemo commodi veritatis. Est, voluptatum obcaecati. Rerum quo quia earum hic?
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 6 -->
+    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label"> 70910101-Children's surgical dentistry</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae sapiente quam quo, iure veritatis
+            inventore repudiandae pariatur hic, odit excepturi! Cumque amet qui nobis minima pariatur voluptate beatae
+            nemo commodi veritatis. Est, voluptatum obcaecati. Rerum quo quia earum hic?
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 7 -->
+    <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modal7Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label">70910101-Children's therapeutic dentistry</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae sapiente quam quo, iure veritatis
+            inventore repudiandae pariatur hic, odit excepturi! Cumque amet qui nobis minima pariatur voluptate beatae
+            nemo commodi veritatis. Est, voluptatum obcaecati. Rerum quo quia earum hic?
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 8 -->
+    <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modal8Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label">70910101-Maxillofacial surgery</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae sapiente quam quo, iure veritatis
+            inventore repudiandae pariatur hic, odit excepturi! Cumque amet qui nobis minima pariatur voluptate beatae
+            nemo commodi veritatis. Est, voluptatum obcaecati. Rerum quo quia earum hic?
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 9 -->
+    <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modal9Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label">70910101-Therapeutic dentistry</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae sapiente quam quo, iure veritatis
+            inventore repudiandae pariatur hic, odit excepturi! Cumque amet qui nobis minima pariatur voluptate beatae
+            nemo commodi veritatis. Est, voluptatum obcaecati. Rerum quo quia earum hic?
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 10 -->
+    <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="modal10Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label">70111401-Uzbek language and literature</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae sapiente quam quo, iure veritatis
+            inventore repudiandae pariatur hic, odit excepturi! Cumque amet qui nobis minima pariatur voluptate beatae
+            nemo commodi veritatis. Est, voluptatum obcaecati. Rerum quo quia earum hic?
+          </div>
+        </div>
       </div>
     </div>
   </section>
