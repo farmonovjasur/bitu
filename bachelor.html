@@ -19,13 +19,18 @@
 </head>
 <style>
   .table-container {
-    max-height: 50px;
-    overflow: hidden;
     transition: max-height 0.5s ease-in-out;
   }
 
   .table-container.expanded {
     max-height: 100%;
+  }
+
+  .modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    min-width: 50vw;
   }
 </style>
 
@@ -125,13 +130,10 @@
 
   <!-- Table starts collapsed -->
   <section class="ftco-section">
-    <div class="container mt-4">
+    <div class="container">
       <h1 class="text-center">Bachelor</h1>
-      <div class="alert alert-primary text-center master-row">
-        Hover over me to expand the table!
-      </div>
       <div class="table-container">
-        <table class="table table-bordered">
+        <table class="table table-bordered table-hover">
           <thead class="thead-dark">
             <tr>
               <th>#</th>
@@ -142,66 +144,134 @@
           <tbody>
             <tr>
               <td>1</td>
-              <td>60910200-General medicine</td>
+              <td data-toggle="modal" data-target="#modal1">60910200-General medicine</td>
               <td>6 years</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>60910100-Dentistry (by faculties)</td>
+              <td data-toggle="modal" data-target="#modal2">60910100-Dentistry (by faculties)</td>
               <td>5 years</td>
             </tr>
             <tr>
               <td>3</td>
-              <td>60310100-Economics (by branches and sectors full-time)</td>
+              <td data-toggle="modal" data-target="#modal3">60310100-Economics (by branches and sectors full-time)</td>
               <td>4 years</td>
             </tr>
             <tr>
               <td>4</td>
-              <td>60310100-Economics (by branches and sectors part-time)</td>
+              <td data-toggle="modal" data-target="#modal4">60310100-Economics (by branches and sectors part-time)</td>
               <td>5 years</td>
             </tr>
             <tr>
               <td>5</td>
-              <td>60110500-Primary education (full-time)</td>
+              <td data-toggle="modal" data-target="#modal5">60110500-Primary education (full-time)</td>
               <td>4 years</td>
             </tr>
             <tr>
               <td>6</td>
-              <td>60110500-Primary education (part-time)</td>
+              <td data-toggle="modal" data-target="#modal6">60110500-Primary education (part-time)</td>
               <td>5 years</td>
             </tr>
             <tr>
               <td>7</td>
-              <td>70910101-Psychology by types of activities (full-time)</td>
+              <td data-toggle="modal" data-target="#modal7">70910101-Psychology by types of activities (full-time)</td>
               <td>4 years</td>
             </tr>
             <tr>
               <td>8</td>
-              <td>70910101-Psychology by types of activities (part-time)</td>
+              <td data-toggle="modal" data-target="#modal8">70910101-Psychology by types of activities (part-time)</td>
               <td>5 years</td>
             </tr>
             <tr>
               <td>9</td>
-              <td>60230100-Philology and language teaching (English language)</td>
+              <td data-toggle="modal" data-target="#modal9">60230100-Philology and language teaching (English language)
+              </td>
               <td>4 years</td>
             </tr>
             <tr>
               <td>10</td>
-              <td>60230100-Philology and language teaching (Russian language)</td>
+              <td data-toggle="modal" data-target="#modal10">60230100-Philology and language teaching (Russian language)
+              </td>
               <td>4 years</td>
             </tr>
             <tr>
               <td>11</td>
-              <td>60230100-Philology and language teaching (German language)</td>
+              <td data-toggle="modal" data-target="#modal11">60230100-Philology and language teaching (German language)
+              </td>
               <td>4 years</td>
             </tr>
             <tr>
               <td>12</td>
-              <td>60230100-Philology and language teaching (Uzbek language)</td>
+              <td data-toggle="modal" data-target="#modal12">60230100-Philology and language teaching (Uzbek language)
+              </td>
               <td>4 years</td>
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <!-- Modals -->
+      <!-- Modal 1 -->
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">60910200-General medicine</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nihil sapiente incidunt
+              iure vel distinctio? Voluptatem non obcaecati
+              perspiciatis quas accusantium molestiae suscipit
+              tenetur, quis possimus, necessitatibus doloremque
+              saepe cupiditate est? Eum quos ipsam laborum libero
+              expedita perspiciatis at vel eius.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">Modal 2</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Content for Modal 2.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 3 -->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">Modal 3</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Content for Modal 3.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
   </section>
 
@@ -311,14 +381,6 @@
         }
       });
     });
-
-    // Get the current year and next year
-    const currentYear = new Date().getFullYear();
-    const nextYear = currentYear + 1;
-
-    // Insert values into the spans
-    document.getElementById("currentYear").textContent = currentYear;
-    document.getElementById("nextYear").textContent = nextYear;
   </script>
 </body>
 

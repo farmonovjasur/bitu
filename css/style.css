@@ -10800,7 +10800,7 @@ h5,
   }
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-  font-size: 14px;
+  font-size: 20px;
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
   padding-left: 20px;
@@ -10830,9 +10830,6 @@ h5,
   -webkit-box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
   -moz-box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
   box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
-}
-.ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item {
-  font-size: 14px;
 }
 .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:hover,
 .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:focus {
