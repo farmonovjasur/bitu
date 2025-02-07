@@ -74,28 +74,70 @@
           <li class="nav-item">
             <a href="about.html" class="nav-link">About</a>
           </li>
-          <li class="nav-item">
-            <a href="courses.html" class="nav-link">Organization Structure</a>
-          </li>
+          <!-- Organization Structure -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="organizationDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Organization Structure
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="organizationDropdown">
+              <li><a class="dropdown-item" href="#">CEO</a></li>
+              <li><a class="dropdown-item" href="#">Rector</a></li>
+              <li><a class="dropdown-item" href="#">Vice-Rector</a></li>
+              <li><a class="dropdown-item" href="#">Library Reception</a></li>
+            </ul>
+          </li>
+
+          <!-- Programs -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Programs
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" aria-labelledby="programsDropdown">
               <li><a class="dropdown-item" href="bachelor.html">Bachelor</a></li>
               <li><a class="dropdown-item" href="master.html">Master</a></li>
               <li><a class="dropdown-item" href="ardenature.html">Residency medical training</a></li>
               <li><a class="dropdown-item" href="it_course.html">IT courses</a></li>
               <li><a class="dropdown-item" href="language.html">Language courses</a></li>
               <li><a class="dropdown-item" href="medical.html">Chinese traditional medicine</a></li>
-              <li><a class="dropdown-item" href="fmge.html">FMGE exam prepartion</a></li>
+              <li><a class="dropdown-item" href="fmge.html">FMGE exam preparation</a></li>
             </ul>
           </li>
+
+          <!-- Campus Life -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="campusDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Campus Life
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="campusDropdown">
+              <li><a class="dropdown-item" href="#">Library</a></li>
+              <li><a class="dropdown-item" href="#">Dormitory</a></li>
+              <li><a class="dropdown-item" href="#">Canteen</a></li>
+              <li><a class="dropdown-item" href="#">Sport Facilities</a></li>
+            </ul>
+          </li>
+
+          <!-- Career Center -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="careerDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Career Center
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="careerDropdown">
+              <li><a class="dropdown-item" href="#">Student Community</a></li>
+            </ul>
+          </li>
+
           <li class="nav-item">
             <a href="teacher.html" class="nav-link">Oversea Partners</a>
           </li>
           <li class="nav-item">
             <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Registration</a>
           </li>
         </ul>
       </div>
@@ -103,67 +145,25 @@
   </nav>
   <!-- END nav -->
 
-  <section class="home-slider owl-carousel">
-    <div class="slider-item" style="background-image: url(images/1.webp)">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-md-6 ftco-animate">
-            <h1 class="mb-4">Education Needs Complete Solution</h1>
-            <p>
-              In the modern world, education is the foundation for the development of
-              individuals and societies. However, the education system, once confidently
-              considered a "guarantee for the future", today needs a comprehensive solution
-              due to new demands and complex problems emerging in various fields.
-            </p>
-            <p>
-              <a href="contact.html" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a>
-            </p>
-          </div>
-        </div>
+  <section class="ftco-section position-relative">
+    <div class="conrainer">
+      <div class="showcase">
+        <h1 class="mb-4 text-bold">Education Needs Complete Solution</h1>
+        <p class="text-dark">
+          In the modern world, education is the foundation for the development of
+          individuals and societies. However, the education system, once confidently
+          considered a "guarantee for the future", today needs a comprehensive solution
+          due to new demands and complex problems emerging in various fields.
+        </p>
+        <p>
+          <a href="contact.html" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a>
+        </p>
       </div>
     </div>
-
-    <div class="slider-item" style="background-image: url(images/3.webp)">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-md-6 ftco-animate">
-            <h1 class="mb-4">Innovative education is the need of the hour</h1>
-            <p>
-              The modern world is constantly changing and developing, and in conditions
-              where educational challenges and innovations become a necessity. Every new
-              technological breakthrough, scientific discovery, and digital transformation
-              process requires a rethinking and modernization of our education system. In
-              this regard, innovative education today is not just a desire, but a necessity.
-            </p>
-            <p>
-              <a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a>
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="slider-item" style="background-image: url(images/4.webp)">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-md-6 ftco-animate">
-            <h1 class="mb-4">Innovative education is the need of the hour</h1>
-            <p>
-              The modern world is constantly changing and developing, and in conditions
-              where educational challenges and innovations become a necessity. Every new
-              technological breakthrough, scientific discovery, and digital transformation
-              process requires a rethinking and modernization of our education system. In
-              this regard, innovative education today is not just a desire, but a necessity.
-            </p>
-            <p>
-              <a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a>
-            </p>
-          </div>
-        </div>
-      </div>
+    <div class="video-container">
+      <video src="https://myZoneCDN.b-cdn.net/bg.mp4" autoplay loop muted></video>
     </div>
   </section>
 
@@ -342,7 +342,7 @@
         <div class="col-md-6 align-items-stretch d-flex">
           <div class="img img-video d-flex align-items-center" style="background-image: url(images/2.png)">
             <div class="video justify-content-center">
-              <a href="https://files.fm/f/wwtsnmv4wz"
+              <a href="https://myZoneCDN.b-cdn.net/bitu.mp4"
                 class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
                 <span class="ion-ios-play"></span>
               </a>
@@ -676,13 +676,13 @@
                       <div class="icon">
                         <span class="ion-ios-arrow-down"></span>
                       </div>
-                      <select name="" id="" class="form-control">
-                        <option value="">Select Your Course</option>
-                        <option value="">Art Lesson</option>
-                        <option value="">Language Lesson</option>
-                        <option value="">Music Lesson</option>
-                        <option value="">Sports</option>
-                        <option value="">Other Services</option>
+                      <select name="" id="" class="form-control p-2">
+                        <option class="text-black-50" value="">Select Your Course</option>
+                        <option class="text-black-50" value="">Art Lesson</option>
+                        <option class="text-black-50" value="">Language Lesson</option>
+                        <option class="text-black-50" value="">Music Lesson</option>
+                        <option class="text-black-50" value="">Sports</option>
+                        <option class="text-black-50" value="">Other Services</option>
                       </select>
                     </div>
                   </div>
