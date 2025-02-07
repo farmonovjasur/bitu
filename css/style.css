@@ -11718,10 +11718,10 @@ h5,
 }
 
 .carousel img {
-  width: 200px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 200px;
+  object-fit: contain;
   mix-blend-mode: difference !important;
-  height: 120px;
   margin: 0 100px;
 }
 
