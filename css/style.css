@@ -11708,19 +11708,21 @@ h5,
   overflow: hidden;
   width: 100%;
   padding: 20px;
+  margin-top: 40px;
 }
 
 .carousel {
   display: flex;
   width: calc(200px * 10); /* Adjust based on the number of images */
-  animation: scroll 15s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 .carousel img {
   width: 200px;
+  object-fit: cover;
+  mix-blend-mode: difference !important;
   height: 120px;
   margin: 0 100px;
-  border-radius: 10px;
 }
 
 @keyframes scroll {
