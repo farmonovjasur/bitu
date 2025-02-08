@@ -18,12 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const lastName = document.getElementById("lName").value.trim();
         const email = document.getElementById("email").value.trim();
         const degree = document.getElementById("select_degree").value;
+        const faculty = document.getElementById("select_faculty").value;
         const country = document.getElementById("countrySelect").value;
         const phone = document.getElementById("phone").value.trim();
         const message = document.getElementById("user_message").value.trim();
 
         // Basic Validation
-        if (!firstName || !lastName || !email || !degree || !country || !phone) {
+        if (!firstName || !lastName || !email || !degree || !faculty || !country || !phone) {
             alert("⚠ Please fill in all required fields.");
             return;
         }
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         telegramMessage += `<b>Name:</b> ${firstName} ${lastName}\n`;
         telegramMessage += `<b>Email:</b> ${email}\n`;
         telegramMessage += `<b>Degree:</b> ${degree}\n`;
+        telegramMessage += `<b>Faculty:</b> ${faculty}\n`;
         telegramMessage += `<b>Country:</b> ${country}\n`;
         telegramMessage += `<b>Phone:</b> ${phone}\n`;
         if (message) telegramMessage += `<b>Message:</b> ${message}`;
