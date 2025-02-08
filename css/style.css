@@ -269,6 +269,10 @@ textarea {
   line-height: inherit;
 }
 
+option {
+  color: rgba(0, 0, 0, 0.5)
+}
+
 button,
 input {
   overflow: visible;
