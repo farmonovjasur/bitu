@@ -175,63 +175,54 @@
                                     countries Vokalia and Consonantia, there live the blind texts.
                                 </p>
                             </div>
-                            <form action="#" class="appointment-form ftco-animate">
+                            <form action="#" id="form" class="appointment-form ftco-animate">
                                 <div class="d-md-flex">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="fName" placeholder="First Name" />
+                                        <input type="text" class="form-control" id="fName" placeholder="First Name"
+                                            required />
                                     </div>
                                     <div class="form-group ml-md-4">
-                                        <input type="text" class="form-control" id="lName" placeholder="Last Name" />
+                                        <input type="text" class="form-control" id="lName" placeholder="Last Name"
+                                            required />
                                     </div>
                                     <div class="form-group ml-md-4">
-                                        <input type="email" class="form-control" id="email" placeholder="Email" />
+                                        <input type="email" class="form-control" id="email" placeholder="Email"
+                                            required />
                                     </div>
                                 </div>
                                 <div class="d-md-flex">
                                     <div class="form-group">
-                                        <div class="form-field">
-                                            <div class="select-wrap">
-                                                <div class="icon">
-                                                    <span class="ion-ios-arrow-down"></span>
-                                                </div>
-                                                <select name="" id="select_degree" class="form-control p-2">
-                                                    <option class="text-black-50" value="">Select degree</option>
-                                                    <option class="text-black-50" value="Bachelor">Bachelor</option>
-                                                    <option class="text-black-50" value="Master">Master</option>
-                                                    <option class="text-black-50" value="Residence of training">
-                                                        Residence of training
-                                                    </option>
-                                                    <option class="text-black-50" value="English courses">English
-                                                        courses</option>
-                                                </select>
-                                            </div>
-                                            <div class="select-wrap">
-                                                <div class="icon">
-                                                    <span class="ion-ios-arrow-down"></span>
-                                                </div>
-                                                <select name="" id="countrySelect" class="form-control p-2">
-                                                    <option class="text-black-50" value="">Choose country</option>
-                                                    <option class="text-black-50" value="USA">United States</option>
-                                                    <option class="text-black-50" value="UK">United Kingdom</option>
-                                                    <option class="text-black-50" value="Canada">Canada</option>
-                                                    <option class="text-black-50" value="Germany">Germany</option>
-                                                    <option class="text-black-50" value="France">France</option>
-                                                    <option class="text-black-50" value="India">India</option>
-                                                    <option class="text-black-50" value="China">China</option>
-                                                    <option class="text-black-50" value="Japan">Japan</option>
-                                                    <option class="text-black-50" value="Russia">Russia</option>
-                                                    <option class="text-black-50" value="Brazil">Brazil</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                                        <select id="select_degree" class="form-control p-2" required>
+                                            <option value="">Select degree</option>
+                                            <option value="Bachelor">Bachelor</option>
+                                            <option value="Master">Master</option>
+                                            <option value="Residence of training">Residence of training</option>
+                                            <option value="English courses">English courses</option>
+                                        </select>
+                                        <select id="countrySelect" class="form-control p-2 mt-2" required>
+                                            <option value="">Choose country</option>
+                                            <option value="USA">United States</option>
+                                            <option value="UK">United Kingdom</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="France">France</option>
+                                            <option value="India">India</option>
+                                            <option value="China">China</option>
+                                            <option value="Japan">Japan</option>
+                                            <option value="Russia">Russia</option>
+                                            <option value="Brazil">Brazil</option>
+                                        </select>
                                     </div>
+                                </div>
+                                <div class="d-md-flex">
                                     <div class="form-group ml-md-4">
-                                        <input type="text" class="form-control" placeholder="Phone" />
+                                        <input type="text" class="form-control" id="phone" placeholder="Phone"
+                                            required />
                                     </div>
                                 </div>
                                 <div class="d-md-flex">
                                     <div class="form-group">
-                                        <textarea name="" id="user_message" cols="30" rows="2" class="form-control"
+                                        <textarea id="user_message" cols="30" rows="2" class="form-control"
                                             placeholder="Message"></textarea>
                                     </div>
                                     <div class="form-group ml-md-4">
@@ -335,7 +326,7 @@
                     stroke="#F96D00" />
             </svg>
         </div>
-
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-migrate-3.0.1.min.js"></script>
         <script src="js/popper.min.js"></script>
