@@ -25,57 +25,19 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <style>
-  /* Slider container */
-  .highway-slider {
+  .image-box {
     width: 100%;
-    overflow: hidden;
-    padding: 20px 0;
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
   }
 
-  /* Sliding effect */
-  .highway-lane {
-    display: flex;
-    width: 200%;
-    animation: scroll 9s linear infinite;
-  }
-
-  /* Image styling */
-  .highway-car {
-    width: 300px;
-    height: auto;
-    margin: 0 10px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .highway-car:hover {
-    transform: scale(1.1);
-  }
-
-  /* Keyframes for infinite scrolling */
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-
-  @media (max-width: 768px) {
-    .highway-lane {
-      animation: scroll 6s linear infinite;
-      /* Faster speed on smaller screens */
-    }
-  }
-
-  @media (max-width: 480px) {
-    .highway-lane {
-      animation: scroll 5s linear infinite;
-      /* Super fast on very small screens */
-    }
+  .modal-body img {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
   }
 </style>
 
@@ -240,25 +202,17 @@
         <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
           <h2 class="mb-4">Bukhara Innovative Education and Medicine University</h2>
           <p>
-            On her way she met a copy. The copy warned the Little Blind Text,
-            that where it came from it would have been rewritten a thousand
-            times and everything that was left from its origin would be the
-            word.
-          </p>
-          <p>
-            A small river named Duden flows by their place and supplies it
-            with the necessary regelialia. It is a paradisematic country, in
-            which roasted parts of sentences fly into your mouth.
-          </p>
-          <p>
-            On her way she met a copy. The copy warned the Little Blind Text,
-            that where it came from it would have been rewritten a thousand
-            times and everything that was left from its origin would be the
-            word "and" and the Little Blind Text should turn around and return
-            to its own, safe country. But nothing the copy said could convince
-            her and so it didn’t take long until a few insidious Copy Writers
-            ambushed her, made her drunk with Longe and Parole and dragged her
-            into their agency, where they abused her for their
+            Bukhara Innovative Education and Medical University has been establashed in 2022. Located in Bukhara city,
+            Uzbekistan. It has got it’s license № 0330430 L-4409219 on 28.07.2022. Currently more than 2100 students
+            have been studying there in different faculties. 140 professor-lecturers are teaching students by using
+            modern high technologies. Recently, more than 20 faculties added and expanded university function.
+
+            BIEMU has oversea partners universities which located in Russia Federation, India, IR.Iran, PR.China and
+            Azerbaijan. Bukhara Innovative Education and Medical University will help you to find your path to success.
+
+            Our faculty is committed to sharing their expertise and knowledge with you. Bukhara Innovative Education and
+            Medical university in addition to offering excellent education, ensures your development into a seasoned
+            professional in your field. Our primary aim is to cultivate highly skilled professionals
           </p>
         </div>
       </div>
@@ -448,34 +402,104 @@
       <h2 class="mb-4">Certificates</h2>
     </div>
     <div class="container">
-      <div class="highway-slider">
-        <div class="highway-barrier">
-          <div class="highway-lane">
-            <img class="highway-car" src="images/certificat1.jpg" alt="1">
-            <img class="highway-car" src="images/certificat2.jpg" alt="2">
-            <img class="highway-car" src="images/certificat3.jpg" alt="3">
-            <img class="highway-car" src="images/certificat4.jpg" alt="4">
-            <img class="highway-car" src="images/certificat5.jpg" alt="5">
-            <img class="highway-car" src="images/certificat6.jpg" alt="6">
-            <img class="highway-car" src="images/certificat7.jpg" alt="7">
-            <img class="highway-car" src="images/certificat8.jpg" alt="8">
-            <img class="highway-car" src="images/certificat9.png" alt="9">
-            <img class="highway-car" src="images/certificat10.png" alt="10">
+      <div class="row justify-content-center mb-3">
+        <!-- col-1 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="image-box" data-toggle="modal" data-target="#modal1"
+            style="background-image: url('images/certificat1.jpg');"></div>
+        </div>
+        <!-- col-2 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="image-box" data-toggle="modal" data-target="#modal2"
+            style="background-image: url('images/certificat2.jpg');"></div>
+        </div>
+        <!-- col-3 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="image-box" data-toggle="modal" data-target="#modal3"
+            style="background-image: url('images/certificat3.jpg');"></div>
+        </div>
+      </div>
 
-            <!-- Duplicate images for seamless looping -->
-            <img class="highway-car" src="images/certificat1.jpg" alt="1">
-            <img class="highway-car" src="images/certificat2.jpg" alt="2">
-            <img class="highway-car" src="images/certificat3.jpg" alt="3">
-            <img class="highway-car" src="images/certificat4.jpg" alt="4">
-            <img class="highway-car" src="images/certificat5.jpg" alt="5">
-            <img class="highway-car" src="images/certificat6.jpg" alt="6">
-            <img class="highway-car" src="images/certificat7.jpg" alt="7">
-            <img class="highway-car" src="images/certificat8.jpg" alt="8">
-            <img class="highway-car" src="images/certificat9.png" alt="9">
-            <img class="highway-car" src="images/certificat10.png" alt="10">
+      <div class="row justify-content-center">
+        <!-- col-4 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="image-box" data-toggle="modal" data-target="#modal4"
+            style="background-image: url('images/certificat4.jpg');"></div>
+        </div>
+        <!-- col-5 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="image-box" data-toggle="modal" data-target="#modal5"
+            style="background-image: url('images/certificat5.jpg');"></div>
+        </div>
+        <!-- col-6 -->
+        <div class="col-sm-6 col-md-4">
+          <div class="image-box" data-toggle="modal" data-target="#modal6"
+            style="background-image: url('images/certificat6.jpg');"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Template -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img src="images/certificat1.jpg" alt="Certificate 1">
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img src="images/certificat2.jpg" alt="Certificate 2">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img src="images/certificat3.jpg" alt="Certificate 3">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img src="images/certificat4.jpg" alt="Certificate 4">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img src="images/certificat5.jpg" alt="Certificate 5">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img src="images/certificat6.jpg" alt="Certificate 6">
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <footer class="ftco-footer ftco-bg-dark">
