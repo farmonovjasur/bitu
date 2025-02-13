@@ -10704,7 +10704,7 @@ h5,
   border-radius: 50%;
 }
 .topper .icon span {
-  color: #fd5f00;
+  color: #fd2a00;
   font-size: 20px;
 }
 .topper .text {
@@ -10814,7 +10814,7 @@ h5,
   opacity: 1 !important;
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-  color: #fd5f00;
+  color: #fd2a00;
 }
 @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
@@ -10884,7 +10884,7 @@ h5,
   }
 }
 .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-  color: #fd5f00;
+  color: #fd2a00;
 }
 @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
@@ -11299,7 +11299,7 @@ h5,
   outline: none;
 }
 .btn.btn-primary {
-  background: #fd5f00;
+  background: #fd2a00;
   border: 1px solid #fd5f00;
   color: #fff;
 }
@@ -11518,7 +11518,7 @@ h5,
   position: relative;
   width: 80px;
   height: 80px;
-  background: #fd5f00;
+  background: #fd2a00;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -11686,7 +11686,7 @@ h5,
   z-index: 0;
   opacity: 0;
   position: relative;
-  background: #fd5f00;
+  background: #fd2a00;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -11847,7 +11847,7 @@ textarea.form-control {
 }
 
 .bg-primary {
-  background: #fd5f00 !important;
+  background: #fd2a00 !important;
 }
 
 .about-author .desc h3 {
@@ -12327,7 +12327,7 @@ textarea.form-control {
 }
 .icon-video span {
   font-size: 30px;
-  color: #fd5f00;
+  color: #fd2a00;
 }
 
 #section-counter {
