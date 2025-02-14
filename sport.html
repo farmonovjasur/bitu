@@ -24,6 +24,29 @@
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
+<style>
+    .carousel-item img {
+        height: auto;
+        max-height: 450px;
+        object-fit: cover;
+    }
+
+    .carousel img:hover {
+        transform: 0;
+    }
+
+    .carousel-indicators li {
+        background: #fd5f00;
+        width: 20px;
+        height: 1px;
+        border-radius: 50%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        filter: invert(100%);
+    }
+</style>
 
 <body>
     <div class="bg-top navbar-light">
@@ -176,6 +199,76 @@
         </div>
     </section>
 
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 col-lg-5 ftco-animate bg-light p-3 rounded">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                        </ol>
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/sport1.jpg" alt="slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/sport2.jpg" alt="slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/sport3.jpg" alt="slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/sport4.JPG" alt="slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/sport6.jpg" alt="slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/sport7.jpg" alt="slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/sport8.jpg" alt="slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5 ftco-animate mt-4 mt-md-0">
+                    <p class="text-justify">
+                        <strong>Bukhara Innovative Educational and Medical University (BIEMU)</strong> provides modern
+                        sports
+                        facilities to promote a healthy and active lifestyle for students and staff. The university
+                        offers a variety of indoor and outdoor sports areas to ensure a well-rounded university
+                        experience.
+                    </p>
+                    <ul>
+                        <li><strong>Indoor Facilities:</strong> Gym, sports hall, martial arts & yoga studio.</li>
+                        <li><strong>Outdoor Facilities:</strong> Football field, basketball courts, running track.</li>
+                        <li><strong>Sports Programs:</strong> Competitions, inter-university tournaments, and training
+                            sessions.</li>
+                    </ul>
+                    <p>
+                        BIEMU encourages students to participate in sports, develop teamwork, leadership, and
+                        discipline,
+                        contributing to their overall well-being.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="ftco-footer ftco-bg-dark">
         <div class="container">
