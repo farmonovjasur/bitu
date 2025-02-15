@@ -58,16 +58,27 @@ document.addEventListener("DOMContentLoaded", function () {
       "Neonatology",
       "Radiology",
     ],
-    "Language courses": ["English course"],
-    "IT courses": ["Frontend course"],
-    "Chinese traditional medicine": ["Traditional Chinese Medicine"],
+    "Language courses": [
+      "English language course",
+      "Russian language course",
+      "Uzbek language course"
+    ],
+    "IT courses": [
+      "Frontend course",
+      "Backend course",
+      "Microsoft office course"
+    ],
+    "Chinese traditional medicine": [
+      "Acupuncture",
+      "Moxibustion"
+    ],
     "FMGE exam preparation": ["FMGE Exam Preparation"],
   };
 
   // Update faculty options based on selected degree
   degreeSelect.addEventListener("change", function () {
     const selectedDegree = degreeSelect.value;
-    facultySelect.innerHTML = '<option value="">Choose faculty</option>';
+    facultySelect.innerHTML = '<option value="">Choose faculty or courses</option>';
 
     if (selectedDegree && facultyOptions[selectedDegree]) {
       facultyOptions[selectedDegree].forEach((faculty) => {
