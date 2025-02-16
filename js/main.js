@@ -88,28 +88,56 @@
 	};
 	carousel();
 
-	$('nav .dropdown').hover(function(){
-		var $this = $(this);
-		// 	 timer;
-		// clearTimeout(timer);
-		$this.addClass('show');
-		$this.find('> a').attr('aria-expanded', true);
-		// $this.find('.dropdown-menu').addClass('animated-fast fadeInUp show');
-		$this.find('.dropdown-menu').addClass('show');
-	}, function(){
-		var $this = $(this);
-			// timer;
-		// timer = setTimeout(function(){
+	$(document).ready(function() {
+		// Handle dropdown hover for desktop
+		$('nav .dropdown').hover(function() {
+			var $this = $(this);
+			$this.addClass('show');
+			$this.find('.dropdown-menu').addClass('show');
+			$this.find('> a').attr('aria-expanded', true);
+		}, function() {
+			var $this = $(this);
 			$this.removeClass('show');
-			$this.find('> a').attr('aria-expanded', false);
-			// $this.find('.dropdown-menu').removeClass('animated-fast fadeInUp show');
 			$this.find('.dropdown-menu').removeClass('show');
-		// }, 100);
-	});
-
-
-	$('#dropdown04').on('show.bs.dropdown', function () {
-	  console.log('show');
+			$this.find('> a').attr('aria-expanded', false);
+		});
+	
+		// Handle dropdown click for mobile
+		$('nav .dropdown > a').on('click', function(e) {
+			e.preventDefault(); // Prevent default link behavior
+			var $this = $(this).parent('.dropdown');
+			var dropdownMenu = $this.find('.dropdown-menu');
+	
+			if ($this.hasClass('show')) {
+				$this.removeClass('show');
+				dropdownMenu.removeClass('show');
+				$this.find('> a').attr('aria-expanded', false);
+			} else {
+				// Close other open dropdowns
+				$('nav .dropdown').removeClass('show');
+				$('nav .dropdown-menu').removeClass('show');
+				$('nav .dropdown > a').attr('aria-expanded', false);
+	
+				// Open the clicked dropdown
+				$this.addClass('show');
+				dropdownMenu.addClass('show');
+				$this.find('> a').attr('aria-expanded', true);
+			}
+		});
+	
+		// Close dropdowns when clicking outside
+		$(document).on('click touchstart', function(e) {
+			if (!$(e.target).closest('nav .dropdown').length) {
+				$('nav .dropdown').removeClass('show');
+				$('nav .dropdown-menu').removeClass('show');
+				$('nav .dropdown > a').attr('aria-expanded', false);
+			}
+		});
+	
+		// Bootstrap dropdown event (optional)
+		$('#dropdown04').on('show.bs.dropdown', function() {
+			console.log('show');
+		});
 	});
 
 	// scroll
