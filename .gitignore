@@ -3,7 +3,7 @@ node_modules/
 
 # Ignore the dist directory (Webpack output)
 dist/
-js/cd.js
+js/
 
 # Ignore environment files
 .env
