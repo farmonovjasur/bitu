@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://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@github.com/farmonovjasur/bitu.git"
+    "type": "git"
   },
   "keywords": [],
   "author": "",
