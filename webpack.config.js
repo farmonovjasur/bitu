@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path'); // Add this line
 const WebpackObfuscator = require('webpack-obfuscator');
 
 module.exports = {
@@ -10,9 +10,9 @@ module.exports = {
   mode: 'production',
   plugins: [
     new WebpackObfuscator({
-      rotateStringArray: true, // Obfuscate strings
-      compact: true, // Compact code
-      controlFlowFlattening: true, // Make control flow harder to follow
+      rotateStringArray: true,
+      compact: true,
+      controlFlowFlattening: true,
     }),
   ],
 };
