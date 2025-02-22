@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const TELEGRAM_BOT_TOKEN = window.CD.CDN;
-  const TELEGRAM_CHAT_ID = "586564605";
+  const TELEGRAM_CHAT_ID = "682736273";
   const URL = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
 
   const degreeSelect = document.getElementById("select_degree");

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const TOKEN = window.CD_contact.CDN;
-    const CHAT_ID = "586564605";
+    const CHAT_ID = "682736273";
     const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
     document.getElementById("form").addEventListener("submit", async function (e) {

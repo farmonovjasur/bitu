@@ -1,3 +1,3 @@
-window.CD = {CDN: "7486963640:AAE3sMEu0MPW7jPkUlxXqiklaRf6chWEW3I"};
+window.CD = {CDN: "7797262204:AAGSOBV6AeWKiKWuFOKo5F5Mw0tvLew9nB8"};
 
-window.CD_contact = {CDN: "7421295700:AAHJ6E1k3FogbXTS-_48nzTrXzqOrQWpsRQ"};
+window.CD_contact = {CDN: "8020815921:AAHEUuYYr1T2-dX62BUimVYNGa-Hq_KbKuk"};
