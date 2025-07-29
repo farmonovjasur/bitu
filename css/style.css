@@ -11722,6 +11722,11 @@ h5,
   animation: scroll 10s linear infinite;
   min-width: 200%;
 }
+
+.carousel-track h3 {
+  font-size: 17px;
+}
+
 .carousel img {
   min-width: 180px;
   max-width: 100%;
