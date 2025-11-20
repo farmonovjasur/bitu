@@ -290,3 +290,19 @@
 
 const token = process.env.GITHUB_TOKEN;
 
+        function update3DCarousel() {
+            const items = document.querySelectorAll('.carousel-item');
+            let activeIndex = [...items].findIndex(i => i.classList.contains('active'));
+
+            items.forEach(i => i.classList.remove("prev-item", "next-item"));
+
+            const prevIndex = (activeIndex - 1 + items.length) % items.length;
+            const nextIndex = (activeIndex + 1) % items.length;
+
+            items[prevIndex].classList.add("prev-item");
+            items[nextIndex].classList.add("next-item");
+        }
+
+        $('#myCarousel').on('slid.bs.carousel', update3DCarousel);
+        $(document).ready(update3DCarousel);
+
