@@ -1,3 +1,28 @@
+function showImage(src) {
+	document.getElementById('modalImage').src = src;
+}
+
+const track = document.querySelector('.carousel-track');
+let scrollAmount = 0;
+let speed = 1; 
+let animation;
+
+function startCarousel() {
+  animation = setInterval(() => {
+    scrollAmount += speed;
+    if (scrollAmount >= track.scrollWidth / 2) {
+      scrollAmount = 0; 
+    }
+    track.style.transform = `translateX(-${scrollAmount}px)`;
+  }, 10); 
+}
+
+track.addEventListener('mouseenter', () => clearInterval(animation));
+track.addEventListener('mouseleave', () => startCarousel());
+
+startCarousel();
+
+
 AOS.init({
 	duration: 800,
 	easing: 'slide'
@@ -306,7 +331,4 @@ function update3DCarousel() {
 $('#myCarousel').on('slid.bs.carousel', update3DCarousel);
 $(document).ready(update3DCarousel);
 
-function showImage(src) {
-	document.getElementById('modalImage').src = src;
-}
 

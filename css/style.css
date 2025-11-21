@@ -11713,20 +11713,11 @@ h5,
 }
 .carousel {
   display: flex;
-  flex-wrap: nowrap;
 }
-
 .carousel-track {
   display: flex;
   gap: 20px;
-  animation: scroll 10s linear infinite;
-  min-width: 200%;
 }
-
-.carousel-track h3 {
-  font-size: 17px;
-}
-
 .carousel img {
   min-width: 180px;
   max-width: 100%;
@@ -11739,14 +11730,6 @@ h5,
   transform: scale(1.1);
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
 /* Tablet screens */
 @media (max-width: 768px) {
   .carousel-track {
@@ -11760,7 +11743,6 @@ h5,
 /* Mobile screens */
 @media (max-width: 480px) {
   .carousel-container {
-    width: 100%;
     padding: 10px 0;
   }
   .carousel-track {
