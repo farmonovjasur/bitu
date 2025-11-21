@@ -248,3 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 }); // end DOMContentLoaded
+
+function showImage(src) {
+    document.getElementById('modalImage').src = src;
+}
